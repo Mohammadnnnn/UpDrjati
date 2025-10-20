@@ -80,7 +80,7 @@ nest_asyncio.apply()
 # ═══════════════════════════════════════════════════════════════════════════
 
 # ⚠️ ضع التوكن الخاص بك هنا
-BOT_TOKEN = "7718993072:AAHDzMdT70xfnVwif-BV-2XsO_Kvnq4OyW4"  # غيّر هذا
+BOT_TOKEN = "7718993072:AAFxcXOBWrdv54h3U2CtW-2CeN-dL9Qxe6w"  # غيّر هذا
 BOT_USERNAME = "UpDrjati_Bot"    # غيّر هذا
 
 # IDs المسؤولين
