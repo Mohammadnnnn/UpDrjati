@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="سياسة الخصوصية - بوت الدورات الجامعية">
-    <meta name="keywords" content="privacy policy, سياسة الخصوصية, university courses bot">
     <title>Privacy Policy | سياسة الخصوصية - University Courses Bot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,420 +13,1170 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Cairo', 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #2d3748;
             line-height: 1.8;
-            color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
-            padding: 40px 20px;
         }
         
-        .container {
-            max-width: 900px;
+        .main-container {
+            max-width: 1200px;
             margin: 0 auto;
             background: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
         
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding-bottom: 30px;
-            border-bottom: 3px solid #667eea;
-        }
-        
-        .header h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header .emoji {
-            font-size: 3em;
-            display: block;
-            margin-bottom: 20px;
-        }
-        
-        .header .subtitle {
-            color: #666;
-            font-size: 1.2em;
-        }
-        
-        .last-updated {
-            background: #f0f4ff;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 40px;
-            color: #667eea;
-            font-weight: bold;
-        }
-        
-        section {
-            margin-bottom: 40px;
-        }
-        
-        h2 {
-            color: #667eea;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
-        }
-        
-        h3 {
-            color: #764ba2;
-            font-size: 1.3em;
-            margin: 25px 0 15px 0;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        ul, ol {
-            margin: 15px 0 15px 30px;
-        }
-        
-        li {
-            margin-bottom: 10px;
-        }
-        
-        .highlight-box {
-            background: #fff3cd;
-            border-right: 4px solid #ffc107;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        
-        .info-box {
-            background: #e8f5e9;
-            border-right: 4px solid #4caf50;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        
-        .warning-box {
-            background: #ffebee;
-            border-right: 4px solid #f44336;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-        
-        .contact-section {
+        /* Header */
+        .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 40px;
+            text-align: center;
             color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"></path><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="%23ffffff"></path><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="%23ffffff"></path></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        
+        .hero p {
+            font-size: 1.4em;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+        
+        .badge-container {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        /* Update Bar */
+        .update-bar {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        /* Content */
+        .content {
+            padding: 60px 40px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 4px solid #f1f5f9;
+            font-weight: 700;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #764ba2;
+            margin: 30px 0 20px 0;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .text-content {
+            font-size: 1.1em;
+            line-height: 1.9;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 15px;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+        
+        .card:hover::before {
+            opacity: 0.1;
+        }
+        
+        .card-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .card h3 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .card p, .card li {
+            color: #4a5568;
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+        
+        /* Info Boxes */
+        .info-box {
             padding: 30px;
             border-radius: 15px;
+            margin: 25px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 6px;
+            height: 100%;
+        }
+        
+        .info-blue {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-left: 6px solid #3b82f6;
+        }
+        
+        .info-green {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-left: 6px solid #10b981;
+        }
+        
+        .info-red {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-left: 6px solid #ef4444;
+        }
+        
+        .info-yellow {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 6px solid #f59e0b;
+        }
+        
+        .info-purple {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            border-left: 6px solid #8b5cf6;
+        }
+        
+        .info-box h4 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #1e293b;
+            font-weight: 700;
+        }
+        
+        .info-box p {
+            color: #475569;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+        
+        .info-box ul {
+            margin: 15px 0 0 30px;
+        }
+        
+        .info-box li {
+            color: #475569;
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        th {
+            padding: 20px;
+            text-align: right;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: right;
+            font-size: 1.05em;
+            color: #4a5568;
+        }
+        
+        tr:hover {
+            background: #f8fafc;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* Points Badge */
+        .points-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1em;
+        }
+        
+        .points-green {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+        }
+        
+        .points-red {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px 40px;
             text-align: center;
-            margin-top: 50px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="%23ffffff" opacity="0.1"></path></svg>') no-repeat top;
+            background-size: cover;
         }
         
         .contact-section h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-section p {
+            font-size: 1.3em;
+            margin: 15px 0;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-btn {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
             color: white;
-            border: none;
-        }
-        
-        .contact-section a {
-            color: #fff;
+            padding: 18px 40px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            display: inline-block;
-            margin: 10px;
+            font-weight: 700;
+            font-size: 1.15em;
+            border: 2px solid rgba(255,255,255,0.3);
             transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
         }
         
-        .contact-section a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
+        .contact-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
         }
         
+        /* Footer */
         .footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            padding: 50px 40px;
             text-align: center;
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 2px solid #e0e0e0;
-            color: #666;
         }
         
+        .footer p {
+            margin: 12px 0;
+            font-size: 1.05em;
+        }
+        
+        .footer strong {
+            color: white;
+        }
+        
+        .footer-badges {
+            margin: 25px 0;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .footer-badge {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.95em;
+        }
+        
+        /* English Section */
+        .english-section {
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .english-section .info-box {
+            border-left: none;
+            border-right: 6px solid;
+        }
+        
+        .english-section .info-blue {
+            border-right-color: #3b82f6;
+        }
+        
+        .english-section .info-green {
+            border-right-color: #10b981;
+        }
+        
+        .english-section .info-red {
+            border-right-color: #ef4444;
+        }
+        
+        .english-section .info-yellow {
+            border-right-color: #f59e0b;
+        }
+        
+        .english-section .info-purple {
+            border-right-color: #8b5cf6;
+        }
+        
+        .english-section th,
+        .english-section td {
+            text-align: left;
+        }
+        
+        .english-section ul {
+            margin: 15px 0 0 0;
+            padding-left: 30px;
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 30px 20px;
+            .hero {
+                padding: 60px 20px;
             }
             
-            .header h1 {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .content {
+                padding: 40px 20px;
+            }
+            
+            .section-header {
                 font-size: 2em;
             }
             
-            h2 {
-                font-size: 1.5em;
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-section {
+                padding: 40px 20px;
+            }
+            
+            .contact-links {
+                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <span class="emoji">🎓🔒</span>
-            <h1>سياسة الخصوصية</h1>
-            <h1 style="font-size: 1.8em; margin-top: 10px;">Privacy Policy</h1>
-            <p class="subtitle">بوت الدورات الجامعية | University Courses Bot</p>
+    <div class="main-container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-icon">🔒</div>
+                <h1>سياسة الخصوصية</h1>
+                <p>Privacy Policy</p>
+                <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.9;">University Courses Bot</p>
+            </div>
         </div>
         
-        <!-- Last Updated -->
-        <div class="last-updated">
-            📅 آخر تحديث | Last Updated: 8 أكتوبر 2025 | October 8, 2025
+        <!-- Update Bar -->
+        <div class="update-bar">
+            📅 آخر تحديث: 23 أكتوبر 2025 | Last Updated: October 23, 2025
         </div>
         
-        <!-- Arabic Version -->
-        <section>
-            <h2>🇸🇦 النسخة العربية</h2>
-            
-            <h3>مقدمة</h3>
-            <p>
-                مرحباً بك في بوت الدورات الجامعية. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. 
-                توضح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك عند استخدام خدماتنا عبر تيليجرام.
-            </p>
-            
-            <h3>البيانات التي نجمعها</h3>
-            
-            <div class="info-box">
-                <strong>📊 معلومات مطلوبة (تلقائية من تيليجرام):</strong>
-                <ul>
-                    <li>معرف المستخدم (User ID) - رقم فريد من تيليجرام</li>
-                    <li>الاسم الأول - اسم العرض الخاص بك</li>
-                    <li>اسم المستخدم - إن كان عاماً (@username)</li>
-                </ul>
+        <!-- Arabic Content -->
+        <div class="content" dir="rtl">
+            <div class="section">
+                <h2 class="section-header">
+                    <span>🇸🇦</span>
+                    <span>النسخة العربية</span>
+                </h2>
+                
+                <h3 class="section-title"><span>📖</span> مقدمة</h3>
+                <p class="text-content">
+                    مرحباً بك في بوت الدورات الجامعية. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. 
+                    توضح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك عند استخدام خدماتنا عبر تيليجرام.
+                </p>
+                
+                <div class="info-box info-purple">
+                    <h4>🎯 التزامنا الأساسي</h4>
+                    <p>نحن ملتزمون بحماية خصوصيتك وفقاً لأعلى المعايير الدولية بما في ذلك اللائحة العامة لحماية البيانات (GDPR) 
+                    وقوانين حماية البيانات المحلية. بياناتك ملكك، ونحن مجرد أمناء عليها.</p>
+                </div>
+                
+                <h3 class="section-title"><span>📊</span> البيانات التي نجمعها</h3>
+                
+                <div class="info-box info-blue">
+                    <h4>✅ معلومات أساسية (تلقائية من تيليجرام)</h4>
+                    <ul>
+                        <li><strong>معرف المستخدم (User ID):</strong> رقم فريد يوفره تيليجرام</li>
+                        <li><strong>الاسم الأول:</strong> اسم العرض الخاص بك</li>
+                        <li><strong>اسم المستخدم:</strong> إن كان عاماً (@username)</li>
+                        <li><strong>تاريخ التسجيل:</strong> تاريخ أول استخدام للبوت</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box info-blue">
+                    <h4>📚 بيانات الاستخدام والنشاط</h4>
+                    <ul>
+                        <li>طلبات الدورات (رمز الجامعة ورمز الدورة)</li>
+                        <li>الملفات والرسائل التي قمت بتحميلها</li>
+                        <li>الطوابع الزمنية للطلبات</li>
+                        <li>رصيد النقاط والمكافآت</li>
+                        <li>نتائج الاختبارات التفاعلية</li>
+                        <li>عدد الإحالات (مجهول الهوية)</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box info-red">
+                    <h4>❌ ما لا نجمعه أبداً (ضمانة مطلقة)</h4>
+                    <ul>
+                        <li>رقم هاتفك المحمول</li>
+                        <li>محتوى رسائلك الخاصة</li>
+                        <li>موقعك الجغرافي (GPS)</li>
+                        <li>قائمة جهات الاتصال</li>
+                        <li>معلومات الدفع أو البطاقات</li>
+                        <li>بيانات حساسة (الصحة، الدين، السياسة)</li>
+                        <li>ملفات تعريف الارتباط (Cookies)</li>
+                        <li>نشاطك خارج البوت</li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>⚙️</span> كيف نستخدم بياناتك</h3>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">📤</div>
+                        <h3>توفير الخدمة</h3>
+                        <p>إرسال ملفات ومواد الدورات الجامعية المطلوبة بناءً على اختيارك</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🎓</div>
+                        <h3>الاختبارات التفاعلية</h3>
+                        <p>تقديم اختبارات تفاعلية وتتبع تقدمك التعليمي والأكاديمي</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🎁</div>
+                        <h3>نظام النقاط</h3>
+                        <p>إدارة نقاط المكافآت والإحالات الخاصة بك</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📈</div>
+                        <h3>تحسين الخدمة</h3>
+                        <p>تحليل الاستخدام لتطوير وتحسين جودة المحتوى</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>الإحصائيات</h3>
+                        <p>إنشاء إحصائيات عامة مجهولة الهوية</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">💬</div>
+                        <h3>الدعم الفني</h3>
+                        <p>الرد على استفساراتك وحل المشاكل التقنية</p>
+                    </div>
+                </div>
+                
+                <h3 class="section-title"><span>💾</span> التخزين والحفظ</h3>
+                
+                <div class="info-box info-green">
+                    <h4>☁️ البنية التحتية للتخزين</h4>
+                    <p>جميع البيانات مخزنة بشكل آمن على <strong>Google Drive</strong> مع مساحة تخزين تصل إلى <strong>2 تيرابايت</strong>. 
+                    يتم تشفير جميع الملفات وقواعد البيانات باستخدام معيار التشفير <strong>AES-256</strong>.</p>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>نوع البيانات</th>
+                                <th>مدة الاحتفاظ</th>
+                                <th>الإجراء بعد المدة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>المستخدمون النشطون</strong></td>
+                                <td>طوال فترة الاستخدام</td>
+                                <td>يتم الاحتفاظ بها</td>
+                            </tr>
+                            <tr>
+                                <td><strong>المستخدمون غير النشطين</strong></td>
+                                <td>12 شهراً من آخر نشاط</td>
+                                <td>حذف تلقائي كامل</td>
+                            </tr>
+                            <tr>
+                                <td><strong>سجلات الطلبات</strong></td>
+                                <td>12 شهراً كحد أقصى</td>
+                                <td>حذف تلقائي</td>
+                            </tr>
+                            <tr>
+                                <td><strong>نتائج الاختبارات</strong></td>
+                                <td>طوال فترة الاستخدام</td>
+                                <td>يمكن حذفها يدوياً</td>
+                            </tr>
+                            <tr>
+                                <td><strong>النسخ الاحتياطية</strong></td>
+                                <td>30 يوماً</td>
+                                <td>حذف تلقائي</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 class="section-title"><span>⚖️</span> حقوقك الكاملة</h3>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">🔍</div>
+                        <h3>حق الوصول</h3>
+                        <p><strong>الأمر:</strong> <code>/mydata</code></p>
+                        <p>احصل على نسخة كاملة من جميع بياناتك</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🗑️</div>
+                        <h3>حق الحذف</h3>
+                        <p><strong>الأمر:</strong> <code>/deletedata</code></p>
+                        <p>احذف جميع بياناتك خلال 24 ساعة</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📤</div>
+                        <h3>حق التصدير</h3>
+                        <p><strong>الأمر:</strong> <code>/export</code></p>
+                        <p>صدر بياناتك بصيغة JSON أو CSV</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">✏️</div>
+                        <h3>حق التصحيح</h3>
+                        <p>صحح أي معلومات غير دقيقة</p>
+                    </div>
+                </div>
+                
+                <div class="info-box info-yellow">
+                    <h4>⚡ تنفيذ فوري وضمان</h4>
+                    <ul>
+                        <li>طلبات الحذف تُنفذ خلال <strong>24 ساعة</strong></li>
+                        <li>طلبات الوصول والتصدير خلال <strong>48 ساعة</strong></li>
+                        <li>لا نطلب تبريرات لممارسة حقوقك</li>
+                        <li>جميع الخدمات <strong>مجانية تماماً</strong></li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>🛡️</span> الأمان وحماية البيانات</h3>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">🔐</div>
+                        <h3>تشفير قوي</h3>
+                        <p>تشفير AES-256 (نفس مستوى البنوك)</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">☁️</div>
+                        <h3>خوادم آمنة</h3>
+                        <p>Google Drive مع جدران نارية متقدمة</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">👤</div>
+                        <h3>وصول محدود</h3>
+                        <p>فقط 2 أدمن بصلاحيات محدودة جداً</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>مراقبة مستمرة</h3>
+                        <p>مراقبة 24/7 لأي نشاط مشبوه</p>
+                    </div>
+                </div>
+                
+                <h3 class="section-title"><span>🚫</span> عدم المشاركة مع أطراف ثالثة</h3>
+                
+                <div class="info-box info-red">
+                    <h4>🔒 تعهد مطلق وغير قابل للتفاوض</h4>
+                    <ul>
+                        <li>❌ لا نبيع بياناتك لأي جهة</li>
+                        <li>❌ لا نشارك مع شركات إعلانية</li>
+                        <li>❌ لا نسمح بالتتبع الخارجي</li>
+                        <li>❌ لا نستخدم ملفات Cookies</li>
+                        <li>❌ لا نتتبعك خارج تيليجرام</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box info-yellow">
+                    <h4>⚖️ الاستثناء القانوني الوحيد</h4>
+                    <p>قد نكشف عن معلومات محدودة فقط إذا طُلب منا ذلك بموجب:</p>
+                    <ul>
+                        <li>أمر قضائي من محكمة مختصة</li>
+                        <li>طلب قانوني ملزم من جهة حكومية</li>
+                        <li>ضرورة قانونية لحماية الحقوق</li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>🎁</span> نظام النقاط والإحالات</h3>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>النشاط</th>
+                                <th>النقاط</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>تحميل ملف دراسي</td>
+                                <td><span class="points-badge points-green">+5 نقاط</span></td>
+                            </tr>
+                            <tr>
+                                <td>قراءة رسالة تعليمية</td>
+                                <td><span class="points-badge points-green">+3 نقاط</span></td>
+                            </tr>
+                            <tr>
+                                <td>إجابة صحيحة في اختبار</td>
+                                <td><span class="points-badge points-green">+10 نقاط</span></td>
+                            </tr>
+                            <tr>
+                                <td>إجابة خاطئة في اختبار</td>
+                                <td><span class="points-badge points-red">-2 نقاط</span></td>
+                            </tr>
+                            <tr>
+                                <td>إحالة صديق (لك)</td>
+                                <td><span class="points-badge points-green">+100 نقطة</span></td>
+                            </tr>
+                            <tr>
+                                <td>الانضمام عبر إحالة (للصديق)</td>
+                                <td><span class="points-badge points-green">+50 نقطة</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="info-box info-blue">
+                    <h4>🔗 نظام الإحالة والخصوصية</h4>
+                    <ul>
+                        <li>نسجل العدد فقط - لا نكشف هوية من دعوتهم</li>
+                        <li>رابط الإحالة يحتوي على معرف مشفر فقط</li>
+                        <li>لا يمكن لأحد معرفة من قام بدعوته</li>
+                        <li>النقاط مجهولة ولا تُشارك علناً</li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>👶</span> خصوصية الأطفال والقُصّر</h3>
+                
+                <div class="info-box info-red">
+                    <h4>⚠️ سياسة صارمة</h4>
+                    <p>هذا البوت مخصص حصرياً لطلاب الجامعات البالغين (<strong>18 سنة فما فوق</strong>). 
+                    لا نجمع بيانات الأطفال أو القُصّر تحت 18 عاماً.</p>
+                    <p style="margin-top: 15px;"><strong>إجراءنا:</strong> إذا علمنا أن قاصراً استخدم الخدمة، سنحذف بياناته خلال <strong>24 ساعة</strong>.</p>
+                </div>
+                
+                <h3 class="section-title"><span>🔄</span> التغييرات على السياسة</h3>
+                
+                <div class="info-box info-yellow">
+                    <h4>📢 كيف سنُعلمك بالتغييرات</h4>
+                    <ul>
+                        <li>إشعار مباشر عبر البوت لجميع المستخدمين</li>
+                        <li>تحديث تاريخ "آخر تحديث"</li>
+                        <li>رسالة تفصيلية للتغييرات الجوهرية</li>
+                        <li>مهلة <strong>30 يوماً</strong> قبل تطبيق التغييرات</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>حقك:</strong> يمكنك حذف بياناتك إن لم توافق على التغييرات</p>
+                </div>
             </div>
-            
-            <div class="info-box">
-                <strong>📚 معلومات الاستخدام:</strong>
-                <ul>
-                    <li>طلبات الدورات (رمز الجامعة، رمز الدورة)</li>
-                    <li>أوقات وتواريخ الطلبات</li>
-                    <li>إحصائيات الاستخدام (مجهولة الهوية)</li>
-                </ul>
-            </div>
-            
-            <div class="warning-box">
-                <strong>❌ ما لا نجمعه أبداً:</strong>
-                <ul>
-                    <li>رقم هاتفك المحمول</li>
-                    <li>محتوى رسائلك الخاصة</li>
-                    <li>موقعك الجغرافي</li>
-                    <li>قائمة جهات الاتصال</li>
-                    <li>أي معلومات حساسة أخرى</li>
-                </ul>
-            </div>
-            
-            <h3>كيف نستخدم بياناتك</h3>
-            <p>نستخدم المعلومات المجمعة للأغراض التالية:</p>
-            <ul>
-                <li>✅ توفير وإرسال ملفات ومواد الدورات المطلوبة</li>
-                <li>✅ تحسين جودة الخدمة وتجربة المستخدم</li>
-                <li>✅ إنشاء إحصائيات عامة مجهولة الهوية</li>
-                <li>✅ الرد على استفساراتك وطلبات الدعم</li>
-                <li>✅ منع الإساءة والاستخدام غير المشروع</li>
-            </ul>
-            
-            <h3>مدة الاحتفاظ بالبيانات</h3>
-            <ul>
-                <li><strong>المستخدمون النشطون:</strong> نحتفظ ببياناتك طوال فترة استخدامك للخدمة</li>
-                <li><strong>المستخدمون غير النشطين:</strong> 12 شهراً من آخر استخدام، ثم يتم الحذف التلقائي</li>
-                <li><strong>سجلات الطلبات:</strong> سنة واحدة كحد أقصى</li>
-                <li><strong>الإحصائيات المجهولة:</strong> يمكن الاحتفاظ بها لفترة غير محددة</li>
-            </ul>
-            
-            <h3>حقوقك</h3>
-            <p>لديك الحقوق التالية فيما يتعلق ببياناتك:</p>
-            <ul>
-                <li>🔍 <strong>حق الوصول:</strong> اطلب نسخة من بياناتك باستخدام أمر /mydata</li>
-                <li>🗑️ <strong>حق الحذف:</strong> احذف جميع بياناتك باستخدام أمر /deletedata</li>
-                <li>📤 <strong>حق التصدير:</strong> احصل على نسخة من بياناتك بصيغة قابلة للقراءة</li>
-                <li>✏️ <strong>حق التصحيح:</strong> صحح أي معلومات غير دقيقة</li>
-                <li>⛔ <strong>حق الاعتراض:</strong> اعترض على معالجة بياناتك لأغراض معينة</li>
-            </ul>
-            
-            <div class="highlight-box">
-                <strong>⚡ تنفيذ فوري:</strong> جميع طلبات حذف البيانات تُنفذ خلال 24 ساعة كحد أقصى.
-            </div>
-            
-            <h3>الأمان وحماية البيانات</h3>
-            <p>نتخذ إجراءات أمنية صارمة لحماية بياناتك:</p>
-            <ul>
-                <li>🔐 تشفير قوي لقاعدة البيانات (AES-256)</li>
-                <li>🛡️ خوادم آمنة ومحمية بجدران نارية</li>
-                <li>👤 وصول محدود جداً لقاعدة البيانات</li>
-                <li>🔄 تحديثات أمنية منتظمة</li>
-                <li>📊 مراقبة مستمرة لأي نشاط مشبوه</li>
-            </ul>
-            
-            <h3>عدم المشاركة مع أطراف ثالثة</h3>
-            
-            <div class="warning-box">
-                <strong>🚫 نتعهد بأننا:</strong>
-                <ul>
-                    <li>❌ لا نبيع بياناتك أبداً</li>
-                    <li>❌ لا نشاركها مع شركات إعلانية</li>
-                    <li>❌ لا نسمح بالتتبع من جهات خارجية</li>
-                    <li>❌ لا نستخدم ملفات تعريف الارتباط (Cookies)</li>
-                    <li>❌ لا نتتبعك خارج منصة تيليجرام</li>
-                </ul>
-            </div>
-            
-            <p>
-                <strong>الاستثناء الوحيد:</strong> قد نكشف عن معلومات إذا طُلب منا ذلك بموجب القانون أو أمر قضائي.
-            </p>
-            
-            <h3>خصوصية الأطفال والقُصّر</h3>
-            <p>
-                هذا البوت مخصص لطلاب الجامعات (18 سنة فما فوق). لا نجمع بيانات الأطفال أو القُصّر عن علم. 
-                إذا علمنا أن قاصراً استخدم الخدمة، سنحذف بياناته فوراً.
-            </p>
-            
-            <h3>التغييرات على سياسة الخصوصية</h3>
-            <p>
-                قد نقوم بتحديث هذه السياسة من وقت لآخر لتعكس التغييرات في ممارساتنا أو للأسباب التشغيلية أو القانونية.
-                سيتم إعلامك بأي تغييرات جوهرية عبر البوت أو عبر البريد الإلكتروني إن أمكن.
-            </p>
-            
-            <div class="highlight-box">
-                <strong>📢 الإشعارات:</strong> استمرارك في استخدام الخدمة بعد التغييرات يُعتبر موافقة على السياسة المحدثة.
-            </div>
-        </section>
+        </div>
         
-        <!-- English Version -->
-        <section style="margin-top: 60px;">
-            <h2>🇺🇸 English Version</h2>
-            
-            <h3>Introduction</h3>
-            <p>
-                Welcome to the University Courses Bot. We respect your privacy and are committed to protecting 
-                your personal data. This policy explains how we collect, use, and protect your information when 
-                you use our services via Telegram.
-            </p>
-            
-            <h3>Data We Collect</h3>
-            
-            <div class="info-box">
-                <strong>📊 Required Information (automatic from Telegram):</strong>
-                <ul>
-                    <li>User ID - Unique Telegram identifier</li>
-                    <li>First Name - Your display name</li>
-                    <li>Username - If public (@username)</li>
-                </ul>
+        <!-- English Content -->
+        <div class="content english-section" dir="ltr">
+            <div class="section">
+                <h2 class="section-header">
+                    <span>🇺🇸</span>
+                    <span>English Version</span>
+                </h2>
+                
+                <h3 class="section-title"><span>📖</span> Introduction</h3>
+                <p class="text-content">
+                    Welcome to University Courses Bot. We respect your privacy and are committed to protecting your personal data. 
+                    This policy explains how we collect, use, and protect your information when using our services via Telegram.
+                </p>
+                
+                <div class="info-box info-purple">
+                    <h4>🎯 Our Core Commitment</h4>
+                    <p>We are committed to protecting your privacy according to the highest international standards including 
+                    the General Data Protection Regulation (GDPR) and local data protection laws. Your data is yours, 
+                    and we are merely trustees of it.</p>
+                </div>
+                
+                <h3 class="section-title"><span>📊</span> Data We Collect</h3>
+                
+                <div class="info-box info-blue">
+                    <h4>✅ Basic Information (automatic from Telegram)</h4>
+                    <ul>
+                        <li><strong>User ID:</strong> Unique identifier provided by Telegram</li>
+                        <li><strong>First Name:</strong> Your display name</li>
+                        <li><strong>Username:</strong> If public (@username)</li>
+                        <li><strong>Registration Date:</strong> Date of first bot usage</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box info-blue">
+                    <h4>📚 Usage & Activity Data</h4>
+                    <ul>
+                        <li>Course requests (university code, course code)</li>
+                        <li>Downloaded files and messages</li>
+                        <li>Request timestamps</li>
+                        <li>Reward points balance</li>
+                        <li>Interactive quiz results</li>
+                        <li>Referral count (anonymous)</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box info-red">
+                    <h4>❌ What We NEVER Collect (Absolute Guarantee)</h4>
+                    <ul>
+                        <li>Your phone number</li>
+                        <li>Private message content</li>
+                        <li>Geographic location (GPS)</li>
+                        <li>Contact lists</li>
+                        <li>Payment information</li>
+                        <li>Sensitive data (health, religion, politics)</li>
+                        <li>Cookies</li>
+                        <li>Activity outside the bot</li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>⚙️</span> How We Use Your Data</h3>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">📤</div>
+                        <h3>Service Delivery</h3>
+                        <p>Send requested university course materials based on your selection</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🎓</div>
+                        <h3>Interactive Quizzes</h3>
+                        <p>Provide interactive quizzes and track your educational progress</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🎁</div>
+                        <h3>Points System</h3>
+                        <p>Manage your reward points and referrals</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📈</div>
+                        <h3>Service Improvement</h3>
+                        <p>Analyze usage to develop and improve content quality</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Statistics</h3>
+                        <p>Generate anonymous general statistics</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">💬</div>
+                        <h3>Technical Support</h3>
+                        <p>Respond to inquiries and resolve technical issues</p>
+                    </div>
+                </div>
+                
+                <h3 class="section-title"><span>💾</span> Storage & Retention</h3>
+                
+                <div class="info-box info-green">
+                    <h4>☁️ Storage Infrastructure</h4>
+                    <p>All data is securely stored on <strong>Google Drive</strong> with up to <strong>2 Terabytes</strong> of storage. 
+                    All files and databases are encrypted using the <strong>AES-256</strong> encryption standard.</p>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>Retention Period</th>
+                                <th>Action After Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Active Users</strong></td>
+                                <td>Duration of usage</td>
+                                <td>Retained</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inactive Users</strong></td>
+                                <td>12 months from last activity</td>
+                                <td>Complete automatic deletion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Request Logs</strong></td>
+                                <td>Maximum 12 months</td>
+                                <td>Automatic deletion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Quiz Results</strong></td>
+                                <td>Duration of usage</td>
+                                <td>Can be manually deleted</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Backups</strong></td>
+                                <td>30 days</td>
+                                <td>Automatic deletion</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 class="section-title"><span>⚖️</span> Your Complete Rights</h3>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">🔍</div>
+                        <h3>Right to Access</h3>
+                        <p><strong>Command:</strong> <code>/mydata</code></p>
+                        <p>Get complete copy of all your data</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">🗑️</div>
+                        <h3>Right to Deletion</h3>
+                        <p><strong>Command:</strong> <code>/deletedata</code></p>
+                        <p>Delete all data within 24 hours</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📤</div>
+                        <h3>Right to Export</h3>
+                        <p><strong>Command:</strong> <code>/export</code></p>
+                        <p>Export in JSON or CSV format</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">✏️</div>
+                        <h3>Right to Rectification</h3>
+                        <p>Correct any inaccurate information</p>
+                    </div>
+                </div>
+                
+                <div class="info-box info-yellow">
+                    <h4>⚡ Immediate Execution & Guarantee</h4>
+                    <ul>
+                        <li>Deletion requests executed within <strong>24 hours</strong></li>
+                        <li>Access and export requests within <strong>48 hours</strong></li>
+                        <li>No justification required to exercise your rights</li>
+                        <li>All services are <strong>completely free</strong></li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>🛡️</span> Security & Data Protection</h3>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">🔐</div>
+                        <h3>Strong Encryption</h3>
+                        <p>AES-256 encryption (bank-level security)</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">☁️</div>
+                        <h3>Secure Servers</h3>
+                        <p>Google Drive with advanced firewall protection</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">👤</div>
+                        <h3>Limited Access</h3>
+                        <p>Only 2 admins with very limited permissions</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Continuous Monitoring</h3>
+                        <p>24/7 monitoring for suspicious activity</p>
+                    </div>
+                </div>
+                
+                <h3 class="section-title"><span>🚫</span> No Third-Party Sharing</h3>
+                
+                <div class="info-box info-red">
+                    <h4>🔒 Absolute & Non-Negotiable Commitment</h4>
+                    <ul>
+                        <li>❌ We never sell your data to any party</li>
+                        <li>❌ We never share with advertising companies</li>
+                        <li>❌ We never allow external tracking</li>
+                        <li>❌ We never use cookies</li>
+                        <li>❌ We never track you outside Telegram</li>
+                    </ul>
+                </div>
+                
+                <div class="info-box info-yellow">
+                    <h4>⚖️ The Only Legal Exception</h4>
+                    <p>We may disclose limited information only if required by:</p>
+                    <ul>
+                        <li>Court order from competent jurisdiction</li>
+                        <li>Mandatory legal request from government authority</li>
+                        <li>Legal necessity to protect rights</li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>🎁</span> Points & Referral System</h3>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Activity</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Download study file</td>
+                                <td><span class="points-badge points-green">+5 points</span></td>
+                            </tr>
+                            <tr>
+                                <td>Read educational message</td>
+                                <td><span class="points-badge points-green">+3 points</span></td>
+                            </tr>
+                            <tr>
+                                <td>Correct quiz answer</td>
+                                <td><span class="points-badge points-green">+10 points</span></td>
+                            </tr>
+                            <tr>
+                                <td>Incorrect quiz answer</td>
+                                <td><span class="points-badge points-red">-2 points</span></td>
+                            </tr>
+                            <tr>
+                                <td>Refer a friend (for you)</td>
+                                <td><span class="points-badge points-green">+100 points</span></td>
+                            </tr>
+                            <tr>
+                                <td>Join via referral (for friend)</td>
+                                <td><span class="points-badge points-green">+50 points</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="info-box info-blue">
+                    <h4>🔗 Referral System & Privacy</h4>
+                    <ul>
+                        <li>We record only the count - not who you invited</li>
+                        <li>Referral link contains only encrypted identifier</li>
+                        <li>No one can know who invited them</li>
+                        <li>Points are anonymous and not shared publicly</li>
+                    </ul>
+                </div>
+                
+                <h3 class="section-title"><span>👶</span> Children's Privacy</h3>
+                
+                <div class="info-box info-red">
+                    <h4>⚠️ Strict Policy</h4>
+                    <p>This bot is intended exclusively for university students (<strong>18 years and above</strong>). 
+                    We do not collect data from children or minors under 18 years old.</p>
+                    <p style="margin-top: 15px;"><strong>Our Action:</strong> If we learn that a minor has used the service, we will delete their data within <strong>24 hours</strong>.</p>
+                </div>
+                
+                <h3 class="section-title"><span>🔄</span> Policy Changes</h3>
+                
+                <div class="info-box info-yellow">
+                    <h4>📢 How We'll Notify You of Changes</h4>
+                    <ul>
+                        <li>Direct notification via bot to all users</li>
+                        <li>Update "Last Updated" date</li>
+                        <li>Detailed message for material changes</li>
+                        <li>Provide at least <strong>30 days</strong> before implementing changes</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Your Right:</strong> You can delete your data if you disagree with changes</p>
+                </div>
             </div>
-            
-            <div class="info-box">
-                <strong>📚 Usage Information:</strong>
-                <ul>
-                    <li>Course requests (university code, course code)</li>
-                    <li>Request timestamps</li>
-                    <li>Anonymous usage statistics</li>
-                </ul>
-            </div>
-            
-            <div class="warning-box">
-                <strong>❌ What We NEVER Collect:</strong>
-                <ul>
-                    <li>Phone numbers</li>
-                    <li>Private message content</li>
-                    <li>Location data</li>
-                    <li>Contact lists</li>
-                    <li>Any other sensitive information</li>
-                </ul>
-            </div>
-            
-            <h3>How We Use Your Data</h3>
-            <ul>
-                <li>✅ Provide and deliver requested course materials</li>
-                <li>✅ Improve service quality and user experience</li>
-                <li>✅ Generate anonymous statistics</li>
-                <li>✅ Respond to support requests</li>
-                <li>✅ Prevent abuse and unauthorized use</li>
-            </ul>
-            
-            <h3>Data Retention</h3>
-            <ul>
-                <li><strong>Active Users:</strong> Data retained while using service</li>
-                <li><strong>Inactive Users:</strong> 12 months from last use, then automatic deletion</li>
-                <li><strong>Request Logs:</strong> Maximum 12 months</li>
-                <li><strong>Anonymous Statistics:</strong> May be retained indefinitely</li>
-            </ul>
-            
-            <h3>Your Rights</h3>
-            <ul>
-                <li>🔍 <strong>Right to Access:</strong> Request copy of your data using /mydata</li>
-                <li>🗑️ <strong>Right to Deletion:</strong> Delete all your data using /deletedata</li>
-                <li>📤 <strong>Right to Export:</strong> Get copy in readable format</li>
-                <li>✏️ <strong>Right to Rectification:</strong> Correct inaccurate information</li>
-                <li>⛔ <strong>Right to Object:</strong> Object to certain data processing</li>
-            </ul>
-            
-            <h3>Security</h3>
-            <ul>
-                <li>🔐 Strong database encryption (AES-256)</li>
-                <li>🛡️ Secure servers with firewall protection</li>
-                <li>👤 Very limited database access</li>
-                <li>🔄 Regular security updates</li>
-                <li>📊 Continuous monitoring for suspicious activity</li>
-            </ul>
-            
-            <h3>No Third-Party Sharing</h3>
-            
-            <div class="warning-box">
-                <strong>🚫 We commit that we:</strong>
-                <ul>
-                    <li>❌ Never sell your data</li>
-                    <li>❌ Never share with advertisers</li>
-                    <li>❌ Never allow third-party tracking</li>
-                    <li>❌ Never use cookies</li>
-                    <li>❌ Never track you outside Telegram</li>
-                </ul>
-            </div>
-            
-            <h3>Children's Privacy</h3>
-            <p>
-                This bot is intended for university students (18+). We do not knowingly collect data from minors.
-            </p>
-            
-            <h3>Policy Changes</h3>
-            <p>
-                We may update this policy from time to time. You will be notified of material changes via the bot.
-            </p>
-        </section>
+        </div>
         
         <!-- Contact Section -->
         <div class="contact-section">
             <h2>📞 تواصل معنا | Contact Us</h2>
             <p>لديك أسئلة أو مخاوف بشأن خصوصيتك؟</p>
             <p>Have questions or concerns about your privacy?</p>
-            <div style="margin-top: 20px;">
-                <a href="https://t.me/YourUsername" target="_blank">📱 Telegram: @YourUsername</a>
-                <a href="mailto:privacy@example.com">📧 Email: privacy@example.com</a>
+            <div class="contact-links">
+                <a href="https://t.me/UpDrjati_Bot" target="_blank" class="contact-btn">
+                    <span>📱</span>
+                    <span>Telegram Bot</span>
+                </a>
+                <a href="https://wa.me/97439988411" target="_blank" class="contact-btn">
+                    <span>💬</span>
+                    <span>WhatsApp</span>
+                </a>
             </div>
-            <p style="margin-top: 20px; font-size: 0.9em;">
-                نحن هنا للمساعدة! | We're here to help!
-            </p>
+            <p style="margin-top: 30px; font-size: 1.1em;">نحن هنا للمساعدة 24/7 | We're here to help 24/7</p>
         </div>
         
         <!-- Footer -->
         <div class="footer">
-            <p><strong>إصدار | Version:</strong> 1.0</p>
-            <p><strong>آخر تحديث | Last Updated:</strong> 8 أكتوبر 2025 | October 8, 2025</p>
-            <p style="margin-top: 20px;">
-                🔒 حقوقك محفوظة | Your Rights Are Protected<br>
+            <p><strong>Version:</strong> 10.7 Complete</p>
+            <p style="margin: 10px 0;"><strong>Last Updated:</strong> October 23, 2025 | 23 أكتوبر 2025</p>
+                        
+            <p style="margin-top: 25px; font-size: 1.15em;">
+                🔒 حقوقك محفوظة ومحمية | Your Rights Are Protected & Secured
+            </p>
+            <p style="margin-top: 10px;">
                 🎓 بوت الدورات الجامعية | University Courses Bot
+            </p>
+            <p style="margin-top: 20px; opacity: 0.7; font-size: 0.95em;">
+                © 2025 University Courses Bot. All rights reserved.<br>
+                Powered by Google Drive | Secured by Telegram
             </p>
         </div>
     </div>
